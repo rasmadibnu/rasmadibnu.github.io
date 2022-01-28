@@ -1,0 +1,202 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+  font-family: 'Montserrat';
+}
+
+nav .nav-wrapper{
+  max-width: 86%;
+  margin: 0 auto;
+}
+
+nav .sidenav-trigger{
+  margin-left: 0;
+}
+
+nav ul li a{
+  float: left;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: .5px;
+}
+
+hr{
+  margin: 0;
+  width: 100%;
+  border: 5px solid #fff;
+  border-radius: 5px;
+}
+
+.main{
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/bg-e.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+.row .col{
+  padding: 0;
+}
+
+.home{
+  text-align: right;
+  overflow: hidden;
+  width: 85%;
+  margin: 130px auto 0 auto;
+}
+
+.home a{
+  color: white;
+}
+
+.home h3, .home h1, .home h5, .home p{
+  margin: 0;
+  padding: 0;
+}
+
+.home h1{
+  font-weight: 700;
+}
+
+.home h5{
+  margin-right: 1%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.home .icon{
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.about{
+  overflow: hidden;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.about ul {
+  padding-left: 20px;
+}
+
+.about ul li{
+  list-style-type: disc !important;
+}
+
+.about h4{
+  margin: 10px 0;
+}
+
+.about blockquote{
+  border-left: white 5px solid;
+}
+
+.skills{
+  overflow: hidden;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.portfolio{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.portfolio hr {
+  margin: 20px 0;
+  width: 90%;
+  border: 2px solid #fff;
+}
+
+.portfolio-container{
+  width: 100%;
+  overflow: hidden;
+}
+
+.portfolio-container .portfolio-body {
+  width: 60%;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.portfolio-container .portfolio-body h4,h6 {
+  margin: 0;
+}
+
+.portfolio-container .portfolio-body h6 {
+  margin: 5px 0 0 0;
+  font-weight: bold;
+}
+
+.portfolio-container .portfolio-body span{
+  float: left; color: black; margin-left: 10px
+}
+
+.portfolio-container img{
+  float: left;
+  height: 200px;
+  max-width: 300px;
+}
+
+.scrollable{
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: 100vh;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+/* SCREEN MEDIUM */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .home{
+    text-align: left;
+  }
+}
+
+/* SCREEN SMALL */
+@media only screen and (max-width: 600px) {
+  h2{
+    font-size: 3.5rem;
+  }
+  .home{
+    margin-top: 170px;
+    text-align: left;
+  }
+  .home h1{
+    font-size: 4rem;
+  }
+  .home .icon{
+    margin-left: 10px;
+  }
+
+  .portfolio-container .portfolio-body {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .portfolio-container img{
+    float: left;
+    height: 200px;
+    max-width: 100%;
+  }
+}
